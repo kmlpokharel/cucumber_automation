@@ -42,29 +42,6 @@ public class LoginSteps {
         password.sendKeys("SuperSecretPassword!");
     }
 
-    @When("the user enters a valid username and an invalid password")
-    public void the_user_enters_invalid_password() {
-        WebElement username = driver.findElement(By.id("username"));
-        WebElement password = driver.findElement(By.id("password"));
-        username.sendKeys("practice");
-        password.sendKeys("SuperSecret");
-    }
-
-    @When("the user enters an unregistered username and any password")
-    public void the_user_enters_unregistered_username() {
-        WebElement username = driver.findElement(By.id("username"));
-        WebElement password = driver.findElement(By.id("password"));
-        username.sendKeys("unknownUser");
-        password.sendKeys("anyPassword");
-    }
-
-    @When("the user leaves the username and password fields empty")
-    public void the_user_leaves_credentials_empty() {
-        WebElement username = driver.findElement(By.id("username"));
-        WebElement password = driver.findElement(By.id("password"));
-        username.clear();
-        password.clear();
-    }
 
     @When("clicks the login button")
     public void clicks_login_button() {

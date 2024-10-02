@@ -14,5 +14,3 @@ Feature: User Login
     Then the user should be redirected to the dashboard with tittle "Secure Page page for Automation Testing Practice"
     And see a welcome message "You logged into a secure area!"
 
-
-
